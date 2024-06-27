@@ -91,6 +91,9 @@ const checkScorePart1 = function(groupname) {
         checkbox.addEventListener('change', function() {
             if (this.checked) {
                 scorePart1 += parseInt(this.value, 10);
+                if(checkbox.classList.contains("deadAlert")){
+                    window.location.href = "https://www.gob.mx/salud/conadic/acciones-y-programas/centro-de-atencion-ciudadana-contra-las-adicciones-134381";
+                }
             } else{
                 scorePart1 -= parseInt(this.value, 10);
             }
@@ -105,11 +108,21 @@ const checkScorePart2 = function(groupname) {
             if (this.checked) {
                 arrayResultados.splice(parseInt(((this.getAttribute('name')).match(/\d+/))[0], 10), 1, parseInt(this.value, 10));
                     // scorePart2 += parseInt(this.value, 10);
+                    if(checkbox.classList.contains("interno")){
+                        numInternos++;
+                    }
+                    if(checkbox.classList.contains("externo")){
+                        numExternos++;
+                    }
+                    if(checkbox.classList.contains("grave")){
+                        numGraves++;
+                    }
             } else{
                 arrayResultados.splice(parseInt(((this.getAttribute('name')).match(/\d+/))[0], 10), 1, 0);
             }
         });
     });
+    console.log(arrayResultados);
 }
 
 //Al menos un checkbox de un grupo está marcado

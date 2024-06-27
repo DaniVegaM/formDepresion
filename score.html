@@ -8,15 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 </head>
 <body>
     <main class="scoreMain">
         <div id="particles-js"></div>
         <div class="scoreContainer">
-            <h1 class="score__tittle">Tu estatus de depresión es <span id="scorePart1"></span><span id="special" class="special"></span></h1>
+            <div class="factores">
+                <h2>Factores que causan la depresión:</h2>
+                <p>
+                    <span class="bold">Factores internos:</span> Se relacionan con los síntomas que experimenta la persona, como sentimientos de tristeza, pérdida de interés en actividades, problemas para dormir, fatiga, cambios en el apetito, sentimientos de inutilidad o culpa excesiva, dificultades para concentrarse y pensamientos de autolesión o suicidio.
+                    <br> <br>
+                    <span class="bold">Factores externos:</span> Hacen referencia a factores ambientales o situacionales que pueden contribuir a la depresión, como el estrés laboral, problemas familiares o sociales, dificultades económicas, entre otros.
+                    <br> <br>
+                    <span class="bold">Factores externos graves:</span> Estos son eventos o circunstancias significativas que pueden desencadenar o exacerbar la depresión, como la pérdida de un ser querido, trauma emocional grave, accidentes, enfermedades graves, entre otros.
+                </p>
+            </div>
+            <h1 class="score__tittle">Tu nivel de depresión es de<span id="scorePart1"></span><span id="special" class="special"></span></h1>
             <div class="score__image">
                 <img src="" id="scoreImage" alt="imagen de estatus">
             </div>
+            <p>Estado: <span id="estadoDepre"></span></p>
+            <div class="myPieChart">
+                <h2 class="graficaTittle">Posibles factores que podrían estar causando tu estado de depresión:</h2>
+                <canvas id="myPieChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+        <div class="promediosContainer">
+            <h1 class="score__tittle">De acuerdo con la encuesta que se realizó</h1>
+            <p class="promedio">El <span>28%</span> de las personas sufre depresión debido a factores <span>internos</span></p>
+            <p class="promedio">El <span>53%</span> de las personas sufre depresión debido a factores <span>externos</span></p>
+            <p class="promedio">El <span>19%</span> de las personas sufre depresión debido a factores <br><span>tanto internos y externos en la misma medida</span></p>
+            <p class="promedio">El <span>45%</span> de las personas tienen <span>pensamientos suicidas o de muerte</span></p>
+        </div>
+        <div class="aliento">
+            <p>"En momentos de oscuridad, recuerda que cada amanecer trae consigo la promesa de un nuevo comienzo. Aunque la depresión pueda parecer abrumadora, eres más fuerte de lo que crees. Cada paso que das, por pequeño que sea, te acerca a la luz. Permítete sentir y buscar apoyo, porque no estás solo en esta batalla. Con cada día que pasa, tu fuerza interior crece, y cada esfuerzo cuenta. Mantén viva la esperanza en tu corazón, porque el camino hacia la sanación está lleno de posibilidades. Confía en ti mismo y en tu capacidad para superar esto." <br> <br> <span class="bold red">Sí hay luz al final del tunel</span></p>
         </div>
     </main>
 

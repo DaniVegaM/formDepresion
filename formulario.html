@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario de Depresión</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="tittleContainer">
+      <h1 class="tittle">Cuestionario de <span>Depresión</span></h1>
+    </div>
+
+    <div class="loader">
+      <div class="wrapper">
+        <div class="catContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 733 673" class="catbody">
+            <path fill="#212121"
+              d="M111.002 139.5C270.502 -24.5001 471.503 2.4997 621.002 139.5C770.501 276.5 768.504 627.5 621.002 649.5C473.5 671.5 246 687.5 111.002 649.5C-23.9964 611.5 -48.4982 303.5 111.002 139.5Z">
+            </path>
+            <path fill="#212121" d="M184 9L270.603 159H97.3975L184 9Z"></path>
+            <path fill="#212121" d="M541 0L627.603 150H454.397L541 0Z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 158 564" class="tail">
+            <path fill="#191919"
+              d="M5.97602 76.066C-11.1099 41.6747 12.9018 0 51.3036 0V0C71.5336 0 89.8636 12.2558 97.2565 31.0866C173.697 225.792 180.478 345.852 97.0691 536.666C89.7636 553.378 73.0672 564 54.8273 564V564C16.9427 564 -5.4224 521.149 13.0712 488.085C90.2225 350.15 87.9612 241.089 5.97602 76.066Z">
+            </path>
+          </svg>
+          <div class="text">
+            <span class="bigzzz">:(</span>
+            <!-- <span class="zzz">Meow</span> -->
+          </div>
+        </div>
+        <div class="wallContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 500 126" class="wall">
+            <line stroke-width="6" stroke="#7C7C7C" y2="3" x2="450" y1="3" x1="50"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="85" x2="400" y1="85" x1="100"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="122" x2="375" y1="122" x1="125"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="43" x2="500" y1="43"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="1.99391" x2="115.5" y1="43.0061" x1="115.5"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="2.00002" x2="189" y1="43.0122" x1="189"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="2.00612" x2="262.5" y1="43.0183" x1="262.5"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="2.01222" x2="336" y1="43.0244" x1="336"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="2.01833" x2="409.5" y1="43.0305" x1="409.5"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="43" x2="153" y1="84.0122" x1="153"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="43" x2="228" y1="84.0122" x1="228"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="43" x2="303" y1="84.0122" x1="303"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="43" x2="378" y1="84.0122" x1="378"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="84" x2="192" y1="125.012" x1="192"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="84" x2="267" y1="125.012" x1="267"></line>
+            <line stroke-width="6" stroke="#7C7C7C" y2="84" x2="342" y1="125.012" x1="342"></line>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="ml9">
+      <span class="text-wrapper">
+        <span id="letters">Tu depresión no es un problema técnico, es una señal. Escuchala</span>
+      </span>
+    </div>
+
+    <div>
+      <form id="myForm">
+        <div class="question">
+          <p class="question__tittle">¿Qué tan seguido ha tenido molestias debido a los siguientes problemas?</p>
+          <div class="checkboxes">
+            <label class="question__label">1. Poco interés o placer en hacer cosas</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group1" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group1" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group1" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group1" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">2. Se ha sentido decaído(a), deprimido(a) o sin esperanzas</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group2" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group2" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group2" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group2" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">3. Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido
+              demasiado.</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group3" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group3" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group3" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group3" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">4. Se ha sentido cansado(a) o con poca energía</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group4" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group4" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group4" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group4" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">5. Sin apetito o ha comido en exceso</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group5" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group5" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group5" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group5" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">6. Se ha sentido mal con usted mismo(a) – o que es un fracaso o que ha quedado
+              mal con usted mismo(a) o con su familia</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group6" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group6" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group6" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group6" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">7. Ha tenido dificultad para concentrarse en ciertas actividades, tales como
+              leer el periódico o ver la televisión</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group7" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group7" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group7" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group7" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">8. ¿Se ha movido o hablado tan lento que otras personas podrían haberlo notado?
+              o lo contrario – muy inquieto(a) o agitado(a) que ha estado moviéndose mucho más de lo normal</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group8" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group8" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group8" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group8" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+          <div class="checkboxes">
+            <label class="question__label">9. Pensamientos de que estaría mejor muerto(a) o de lastimarse de alguna
+              manera</label>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group9" value="0">
+              <p class="checkbox__text">Ningun día</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox deadAlert" type="checkbox" name="group9" value="1">
+              <p class="checkbox__text">Varios días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox deadAlert" type="checkbox" name="group9" value="2">
+              <p class="checkbox__text">Mas de la mitad de los días</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox deadAlert" type="checkbox" name="group9" value="3">
+              <p class="checkbox__text">Casi todos los días</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <label class="question__tittle marginb0">10. ¿Sientes que la carga de trabajo académica es abrumadora o
+            estresante para ti? (estrés académico)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group10" value="1">
+              <p class="checkbox__text interno">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group10" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">11. ¿Te resulta difícil adaptarte a la vida universitaria o a un nuevo entorno? (transición y adaptación)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group11" value="1">
+              <p class="checkbox__text interno">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group11" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">12. ¿Sientes presión para socializar o para encajar en ciertos grupos? (presión social)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group12" value="1">
+              <p class="checkbox__text interno">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group12" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">13. ¿Sientes presión por cumplir con las expectativas de tu familia en relación con tu desempeño académico o profesional? (expectativas y presión familiar)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group13" value="1">
+              <p class="checkbox__text interno">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group13" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">14. ¿Tienes problemas para dormir bien o para mantener un horario de sueño regular? (falta de sueño)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group14" value="1">
+              <p class="checkbox__text interno">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group14" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">15. ¿Has experimentado recientemente una ruptura emocional o problemas en tus relaciones personales? (problemas personales y relacionales)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group15" value="1">
+              <p class="checkbox__text externo">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group15" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">16. ¿Te sientes inseguro/a o tienes dudas sobre tu identidad o autoestima? (problemas de identidad y autoestima)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group16" value="1">
+              <p class="checkbox__text externo">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group16" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">17. ¿Usas alcohol o drogas como forma de lidiar con el estrés o la ansiedad? (exposición a sustancias)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group17" value="1">
+              <p class="checkbox__text externo">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group17" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">18. ¿Tienes antecedentes familiares de depresión o problemas de salud mental? (factores biológicos y genéticos)</label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group18" value="1">
+              <p class="checkbox__text externo">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group18" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <label class="question__tittle marginb0">19. ¿Has experimentado recientemente un evento traumático o estresante que te afectó emocionalmente? (eventos traumáticos) </label>
+
+          <div class="checkboxes">
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group19" value="1">
+              <p class="checkbox__text grave">Sí</p>
+            </div>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" name="group19" value="0">
+              <p class="checkbox__text">No</p>
+            </div>
+          </div>
+        </div>
+        <div class="validacion invisible">
+          <p class="validacion__title">Olvidaste marcar tu respuesta en las preguntas:</p>
+          <div id="answers"></div>
+        </div>
+        <div class="button__container">
+          <input class="form__button" type="submit" id="enviarButton" value="Enviar">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/animation.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
+</html>
